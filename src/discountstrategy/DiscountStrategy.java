@@ -19,4 +19,6 @@ public interface DiscountStrategy {
 
     void setDiscountRate(double discountRate);
     
+    //no discount class would work the same but would return zero
+    
 }
