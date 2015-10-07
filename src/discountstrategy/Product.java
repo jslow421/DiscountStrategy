@@ -13,7 +13,7 @@ public class Product {
     private String prodID;
     private String name;
     private double unitPrice;
-    private DiscountStrategy discount;
+    private DiscountStrategy discount; // composition - this is good as it is an abstraction
 
     public Product(String prodID, String name, double unitPrice, DiscountStrategy discount) {
         this.prodID = prodID;
@@ -65,7 +65,7 @@ public class Product {
     public void setDiscount(DiscountStrategy discount) {
         this.discount = discount;
     }
-    
+    //testing
     public static void main(String[] args) {
         Product product = new Product("A100","Hat", 20.00, new PercentOffDiscount(.10));
         double amtSaved = product.getAmountSaved(2);
